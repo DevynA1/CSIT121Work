@@ -1,0 +1,193 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f99;
+    background-image: url(bluebackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,h2,h3{
+    color: #444;
+}
+
+Header{
+    background: #333;
+    color: #f99;
+    padding: 1rem 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav{
+    width: 250px;
+    height: 100%;
+    background: #f99;
+    color:#fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidenav li{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.sidenav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.sidenav a:hover{
+    background: #555;
+    border-radius: 5px;
+}
+
+.sidenav a.active{
+    background: #555;
+    border-radius: 5px;
+}
+
+main{
+    flex: 1;
+    padding: 2rem;
+}
+
+.vibe{
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.vibe img{
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.skills{
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.styledtab{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+    text-align: left;
+}
+
+.styledtab thead{
+    background-color: #f99;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.styledtab th{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styledtab td{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styledtab tbody tr:hover{
+    background-color: white;
+}
+
+.styledtab a{
+    text-decoration: none;
+    color: #f99;
+    font-weight: bold;
+}
+
+.styledtab a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .sidenav{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main{
+        padding: 1rem;
+    }
+
+    .styledtab{
+        font-size: 14px;
+    }
+
+    .styledtab th, .styledtab td{
+        padding: 10px;
+    }
+}
+
+@media (max-width:480px){
+    .sidenav{
+        padding: 10px;
+        position: static;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidenav a{
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    main{
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .styledtab{
+        font-size: 12px;
+    }
+
+    .styledtab th, .styledtab td{
+        padding: 8px;
+    }
+}
